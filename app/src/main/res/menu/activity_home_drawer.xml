@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/family_profile"
+            android:title="Manage Sub Profiles"/>
+        <item
+            android:id="@+id/nav_loyalty_points"
+            android:icon="@drawable/loyalty_points"
+            android:title="Loyalty Points" />
+        <item
+            android:id="@+id/manage_promocodes"
+            android:icon="@drawable/promocodeicon"
+            android:title="Promo Codes" />
+        <item
+            android:id="@+id/manage_payments"
+            android:icon="@drawable/manage_payments"
+            android:title="Manage Payments " />
+        <item
+            android:id="@+id/nav_payemnt_history"
+            android:icon="@drawable/payment_history"
+            android:title="Payment History" />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"
+            />
+
+    </group>
+
+
+</menu>

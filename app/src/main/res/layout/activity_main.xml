@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/very_light_grey_two">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:background="@color/very_light_grey"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+
+
+            android:orientation="horizontal"
+            android:id="@+id/toolbarlay"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+
+                android:padding="@dimen/activity_vertical_margin_half"
+                android:src="@drawable/ic_close"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/close_img"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/activity_vertical_margin_half"
+                android:text="UsellUp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_large"
+
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_extrabold"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/idSearchView"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/rounded_corners"
+                android:elevation="5dp"
+           android:layout_gravity="center"
+                app:searchIcon="@drawable/search"
+        app:voiceIcon="@drawable/list_focused_holo"
+                app:iconifiedByDefault="false"
+
+                app:queryHint="Search"
+
+    />
+            <ImageView
+
+                android:padding="@dimen/activity_vertical_margin_half"
+
+
+                android:src="@drawable/ic_action_up"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/up_img"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+
+               android:visibility="gone"
+                />
+            <ImageView
+
+                android:padding="@dimen/activity_vertical_margin_half"
+
+                android:src="@drawable/ic_action_down"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/down_img"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:visibility="gone"
+
+                />
+
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarlay"
+            android:id="@+id/tabls">
+
+            <!-- our tablayout to display tabs  -->
+            <com.google.android.material.tabs.TabLayout
+
+                android:id="@+id/tabLayout"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+               />
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tabLayout">
+                <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/view_pager"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                    android:layout_above="@+id/bottom_navigation"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+              <!--  <FrameLayout
+                    android:id="@+id/main_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/bottom_navigation"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                </FrameLayout>-->
+
+                <com.google.android.material.bottomappbar.BottomAppBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/bottom_navigation"
+                    app:backgroundTint="@color/md_white_1000"
+
+
+                    >
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/bottomNavigationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@color/md_white_1000"
+                        app:menu="@menu/stuff_bottom_navigation"
+
+                        android:theme="@style/Widget.BottomNavigationView"
+
+                        />
+
+
+                </com.google.android.material.bottomappbar.BottomAppBar>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

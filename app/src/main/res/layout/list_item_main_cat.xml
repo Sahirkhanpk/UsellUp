@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/task_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+
+        android:clickable="true"
+        card_view:cardCornerRadius="4dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:paddingBottom="10dp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="12dp"
+                >
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/avatar_call"
+
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@color/colorPrimaryText"
+                        />
+                    <ImageView
+
+                        android:layout_width="55dp"
+                        android:contentDescription="bac"
+                        android:layout_height="55dp"
+
+                        android:src="@drawable/ic_action_sports"
+                        android:padding="2dp"
+
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/phone_id"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_toEndOf="@+id/avatar_call"
+                    android:layout_toRightOf="@+id/avatar_call"
+                    android:maxLines="1"
+
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_small"
+                    tools:ignore="MissingPrefix" />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/accept_reject_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_cat_type"
+                    android:textColor="@color/colorPrimaryText"
+                    android:background="@color/colorWhite"
+                    android:text="Main "
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                  android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/tv_cat_name"
+                    android:textColor="@color/colorPrimaryText"
+                    android:background="@color/colorWhite"
+                    android:text="Category1 "
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                   android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_marginBottom="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

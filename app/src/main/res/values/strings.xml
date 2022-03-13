@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UsellUp</string>
+
+    <string name="head0">HEAD TIL 1</string>
+    <string name="head1">HEAD TIL 2</string>
+    <string name="head2">HEAD TIL 3</string>
+    <string name="head3">HEAD TIL 4</string>
+    <string name="head4">HEAD TIL 5</string>
+
+    <string name="head5">HEAD TIL 6</string>
+    <string name="head6">HEAD TIL 7</string>
+    <string name="head7">HEAD TIL 8</string>
+
+
+
+</resources>
